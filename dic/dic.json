@@ -1,0 +1,23 @@
+{
+    "google":"read",
+    "Google":"read",
+    "検索":"read",
+    "-":"no_read",
+    "·":"no_read",
+    "エラー":"no_read",
+    "JSONファイル":"read",
+    "JS":"read",
+    "JavaScript":"read",
+    "chrome拡張":"read",
+    "Web API":"read",
+    "XMLHttpRequest":"read",
+    "GAS":"read",
+    "あつ森":"read",
+    "配列":"read",
+    "find()":"read",
+    "input":"read",
+    "Qiita":"read",
+    "blob":"read",
+    "品詞":"read",
+    "ファイルアップローダー":"read"
+}

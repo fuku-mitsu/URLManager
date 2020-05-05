@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+*{
+    font-family: 'Muli', sans-serif;
+    color: #333;
+    box-sizing: border-box;
+    margin: auto;
+}
+button{
+    background-color: #d9d9d9;
+    border-bottom: 3px solid #5ab4bd;
+    color: #565656;
+    width: 30%;
+    height: 1f;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.75;
+  }
+  
+input{
+    font-size: 10px;
+    color: #555;
+    padding: 0px;
+    height: 40px;
+    width: 49%;
+}
+body{
+    --height: 40px;
+    width: 400px;
+    padding: 8px;
+    background: #fff;
+    display: grid;
+    grid-template-rows: var(--height) var(--height) var(--height) var(--height) var(--height) 10px 20px;
+    grid-template-columns: 1fr 10px 10px;
+    grid-template-areas:
+        "header"
+        "searchtex"
+        "copyBtn"
+        "markDiv";
+}
+button.copy{
+    width: 100px;
+    padding: 0px;
+    height: 1f;
+    border-radius: 20px;
+    font-size: 18px;
+    grid-area: copyBtn;
+}
+button.history{
+    width: 100px;
+    padding: 8px;
+    height: 1f;
+    border-radius: 20px;
+    font-size: 18px;
+    grid-area: historyBtn;
+}
+div.button{
+    width: 400px;
+    padding: 0px;
+    grid-area: copyBtn;
+}
+div.srhipt{
+    width: 100%;
+    grid-area: searchtex;
+}
+div.ttl{
+    text-align: left;
+    width: 400px;
+    grid-area: markDiv;
+}
+
+.tab_hearder{
+    text-align: left;
+    width: 100%;
+    grid-area: header;
+}
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: 0;
+}
+  
+  /*タブのスタイル*/
+  .tab_item {
+    width: calc(100%/3);
+    height: 30px;
+    border-bottom: 3px solid #5ab4bd;
+    background-color: #d9d9d9;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  .tab_item:hover {
+    opacity: 0.75;
+  }
+  
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item"] {
+    display: none;
+  }
+  
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content {
+    display: none;
+    padding: 0;
+    clear: both;
+    overflow: hidden;
+  }
+  
+  
+  /*選択されているタブのコンテンツのみを表示*/
+  #all:checked ~ #all_content,
+  #analysis:checked ~ #analysis_content,
+  #design:checked ~ #design_content {
+    display: block;
+  }
+  
+  /*選択されているタブのスタイルを変える*/
+  #all:checked ~ #all_label,
+  #analysis:checked ~ #analysis_label,
+  #design:checked ~ #design_label {
+    background-color: #5ab4bd;
+    color: #fff;
+  }
+
+  /*ファイル入出力*/
+  label[id="dic_file"] {
+    background-color: #d9d9d9;
+    border-bottom: 3px solid #5ab4bd;
+    color: #565656;
+    width: 30%;
+    height: 1f;
+    padding: 0px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+  }
+  label[id="dic_file"]:hover {
+    opacity: 0.75;
+  }
+/* チャット風表示*/
+  .faceicon img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .says {
+    display: inline-block;
+    position: relative; 
+    margin: 0 0 0 50px;
+    padding: 8px;
+    max-width: 300px;
+    border-radius: 12px;
+    background-color: #edf1ee;
+    border-bottom: 3px solid #5ab4bd;
+    color: #edf1ee;
+  }
+  .says:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 3px; 
+    left: -19px;
+    border: 8px solid transparent;
+    border-right: 18px solid #edf1ee;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+  .says p {
+    margin: 0;
+    padding: 0;
+  }
+  .opa {
+    color: rgba(0,0,0,0.5);
+  }
+  /*詳細隠し*/
+  details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+  }
+
+  summary {
+      font-weight: bold;
+      margin: -.5em -.5em 0;
+      padding: .5em;
+  }
+  

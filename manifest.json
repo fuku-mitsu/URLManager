@@ -1,0 +1,28 @@
+{
+    "name": "HistoryManager",
+    "version": "1.0",
+
+
+    "icons": {"128": "img/snoopy_coffee.png"},
+
+    "description": "HistoryManager displays URL.",
+
+    "browser_action": {
+        "default_title": "HistoryManager",
+        "default_popup": "mostUseURL.html"
+    },
+
+    "permissions": [
+      "history",
+      "topSites"
+    ],
+    "web_accessible_resources": [
+      "dic/dic.json"
+    ],
+
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+    "author": "fukumitsu",
+
+    "manifest_version": 2
+}

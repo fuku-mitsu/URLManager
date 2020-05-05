@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="mostUseURL.js"></script>
+    </head>
+    <body>
+        <div class="tab">
+            <!-- タブ -->
+            <input id="all" type="radio" name="tab_item" checked>
+            <label id="all_label" class="tab_item tab_hearder" for="all">標準</label>
+            <input id="analysis" type="radio" name="tab_item">
+            <label id="analysis_label" class="tab_item tab_hearder" for="analysis">分析</label>
+            <input id="design" type="radio" name="tab_item">
+            <label id="design_label" class="tab_item tab_hearder" for="design">あき</label>
+            <!-- タブ共通 -->  
+            <div class="srhipt">
+                <input type="text"  id='searchText' placeholder="検索キーワード：ページ名">
+                <input type="tel"   id='dateTel' placeholder="検索範囲：日付">    
+            </div>
+            <!-- 1タブ目 -->            
+            <div class="tab_content" id="all_content">
+                <div class="tab_content_description">
+                    <div class="button">
+                        <button id='searchBotton' >回数順</button>
+                        <button id='historyBotton' >日付順</button>  
+                        <button id='domainBotton' >ドメイン</button>  
+                    </div>
+                    <div id="mostVisited_div" class="ttl"></div>
+                </div>
+            </div>
+            <!-- 2タブ目 -->
+            <div class="tab_content" id="analysis_content">
+                <div class="tab_content_description">
+                    <div class="button">
+                        <button id='titleBotton' >タイトル</button>
+                        <label id='dic_file'>
+                            <input  type="file" id='dic_upload' name="file" style="display:none" accept="application/json"/>辞書選択
+                        </label>
+                    </div>
+                    <div id="analysis_div" class="ttl">
+                        <!-- キャラの表示 -->
+                        <div class="faceicon">
+                            <img src="img/つぶとまめ.png">
+                            <div class="says">
+                                <p>いらっしゃいませー<label class="opa">ませー！</label></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 3タブ目 -->
+            <div class="tab_content" id="design_content">
+                <div class="tab_content_description">
+                    <div class="button">
+                        <!-- <button id='searchBotton' >回数順</button>
+                        <button id='historyBotton' >日付順</button>   
+                        <button id='domainBotton' >ドメイン</button>    -->
+                    </div>
+                    まだ何も作っていません
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
