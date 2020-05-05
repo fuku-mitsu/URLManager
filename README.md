@@ -14,6 +14,7 @@ Chromeの履歴を様々な方法で表示、管理します。
 　　　　　　　　履歴に含まれるページタイトルを限定します。<br>
 検索範囲：数字（日付）<br>
 　　　　　履歴を何日前まで遡って表示するか決定します。設定がない場合は１日です。<br>
+![sample](https://github.com/fuku-mitsu/URLManager/blob/master/img/normal_access.png)!
 
 - 標準タグ<br>
 回数順ボタン：アクセス回数順で履歴を表示します。<br>
