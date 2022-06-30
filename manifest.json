@@ -1,13 +1,14 @@
 {
     "name": "HistoryManager",
-    "version": "1.0",
+    "version": "1.2",
+    "manifest_version": 3,
 
 
     "icons": {"128": "img/snoopy_coffee.png"},
 
     "description": "HistoryManager displays URL.",
 
-    "browser_action": {
+    "action": {
         "default_title": "HistoryManager",
         "default_popup": "mostUseURL.html"
     },
@@ -16,13 +17,20 @@
       "history",
       "topSites"
     ],
-    "web_accessible_resources": [
-      "dic/dic.json"
+    "host_permissions": [
+      "<all_urls>"
     ],
+    "web_accessible_resources":[{
+      "resources": [
+        "dic/dic.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }],
+    "content_security_policy":  {
+      "sandbox": "sandbox allow-scripts; script-src 'self' 'unsafe-eval'; worker-src blob:"
+    },
+    "author": "fukumitsu"
 
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-
-    "author": "fukumitsu",
-
-    "manifest_version": 2
 }
